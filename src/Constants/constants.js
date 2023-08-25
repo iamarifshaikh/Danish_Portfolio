@@ -1,11 +1,11 @@
 export const bio = {
-    name: "Danish Ahmed Siddiqui",
+    name: "Danish Ahmed",
     roles: [
-        "Full Stack Developer",
+        "Full Stack App Developer",
         "Front-End Developer",
         "Flutter Developer",
     ],
-    description: "I am a Full Stack Developer with 10+ years of experience. I love to learn new technologies and I am always looking for new opportunities.",
+    description: "I am a passionate Full Stack App Developer with a focus on Front-End and expertise in Flutter. I thrive on creating seamless and user-friendly digital experiences that make a difference. With a strong foundation in both Front-End and Flutter Development.",
     resume: "https://www.linkedin.com/in/danish-ahmed-siddiqui/",
     github: "https://github.com/danishahmed22",
     linkedin: "https://www.linkedin.com/in/",

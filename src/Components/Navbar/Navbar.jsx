@@ -3,6 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import styled, { useTheme } from 'styled-components';
 import {SiAndroidauto} from 'react-icons/si'
 import {CgMenuRight} from 'react-icons/cg';
+import {bio as info} from '../../Constants/constants'
 
 const Nav = styled.div`
 background-color:${({ theme }) => theme.cardLight};
@@ -106,6 +107,7 @@ font-size: 1rem;
 font-weight: 500;
 cursor: pointer;
 height:70%;
+text-decoration: none;
 transition: all 0.8s;
 &:hover{
     background-color: ${({theme}) => theme.primary};
@@ -175,7 +177,7 @@ const Navbar = () => {
                     <NavLink href='education'>Education</NavLink>
                 </NavItems>
                 <ButtonContainer>
-                    <GithubButton>GitHub Profile</GithubButton>
+                    <GithubButton as={LinkR} to={info.resume}>GitHub Profile</GithubButton>
                 </ButtonContainer>
                 {open && (
                     <MobileMenu open={open}>
@@ -184,7 +186,7 @@ const Navbar = () => {
                         <MobileMenuLinks href="experience" onClick={() => {setOpen(!open)}}>Experience</MobileMenuLinks>
                         <MobileMenuLinks href="projects" onClick={() => {setOpen(!open)}}>Projects</MobileMenuLinks>
                         <MobileMenuLinks href="education" onClick={() => {setOpen(!open)}}>Education</MobileMenuLinks>
-                        <GithubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href="/" target="_blank">Github Profile</GithubButton>
+                        <GithubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} as={LinkR} to={info.resume}>Github Profile</GithubButton>
                     </MobileMenu>
                 )}
             </NavContainer>
