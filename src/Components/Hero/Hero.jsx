@@ -2,7 +2,6 @@ import React from 'react'
 import styled from "styled-components"
 import {bio as info} from '../../Constants/constants'
 import Typewriter from "typewriter-effect";
-import {FaPaperclip} from 'react-icons/fa';
 import danish from '../../assets/danish.jpg';
 import Animation from '../../Animation';
 import { Link as LinkR } from 'react-router-dom';
