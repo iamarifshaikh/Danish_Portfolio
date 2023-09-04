@@ -233,7 +233,7 @@ const Hero = () => {
                         <Title>Hi, I am <br /> {info.name}</Title>
                         <Loop>I am a <Span><Typewriter options={{strings:info.roles, autoStart:true,loop:true}}/></Span></Loop>
                         <SubTitle>{info.description}</SubTitle>
-                        <ResumeButton to={info.resume}>Resume &nbsp; <FaPaperclip size={15}/></ResumeButton>
+                        {/* <ResumeButton to={info.resume}>Resume &nbsp; <FaPaperclip size={15}/></ResumeButton> */}
                     </HeroLeft>
                     <HeroRight>
                         <Image src={Danish} alt="Photo Of Mine"/>
