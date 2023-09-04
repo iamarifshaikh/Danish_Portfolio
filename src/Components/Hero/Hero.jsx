@@ -3,7 +3,7 @@ import styled from "styled-components"
 import {bio as info} from '../../Constants/constants'
 import Typewriter from "typewriter-effect";
 import {FaPaperclip} from 'react-icons/fa';
-import Danish from '../../assets/danish.jpg';
+import danish from '../../assets/danish.jpg';
 import Animation from '../../Animation';
 import { Link as LinkR } from 'react-router-dom';
 
@@ -236,7 +236,7 @@ const Hero = () => {
                         {/* <ResumeButton to={info.resume}>Resume &nbsp; <FaPaperclip size={15}/></ResumeButton> */}
                     </HeroLeft>
                     <HeroRight>
-                        <Image src={Danish} alt="Photo Of Mine"/>
+                        <Image src={danish} alt="Photo Of Mine"/>
                     </HeroRight>
                 </HeroContent>
             </HeroContainer>
